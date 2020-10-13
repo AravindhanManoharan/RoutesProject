@@ -11,7 +11,7 @@ class Posts extends React.Component {
 
     componentDidMount() {
         setTimeout(()=> {
-            this.props.dispatch(getUserPostsDetailAction())
+            this.props.dispatch(getUserPostsDetailAction()) 
         },2000)
     }
 
@@ -19,7 +19,7 @@ class Posts extends React.Component {
         return (
             <div>
                 {
-                    console.log('posts', this.props.userPostsDetail)
+                    console.log('posts something', this.props.userPostsDetail)
                 }
                 <h2 class="container">POSTS DETAILS</h2>
                 <UserPostsDetailTable id={this.props.match.params.id} name={this.props.match.params.name}></UserPostsDetailTable>
