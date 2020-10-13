@@ -18,6 +18,9 @@ render(){
     return(
         <div>
             {
+                console.log('Aravindha branch created')
+            }
+            {
             this.state.homeFlag &&  <Link to={`/user`} onClick={this.handleClick}><h3>Welcome to world of React-js</h3></Link>
             
             }
